@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.company.kctofel","l":"Chromebook"},{"p":"com.company.kctofel","l":"Computer"},{"p":"com.company.kctofel","l":"Driver"},{"p":"com.company.kctofel","l":"Smartphone"}]
