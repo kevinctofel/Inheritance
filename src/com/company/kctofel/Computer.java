@@ -3,7 +3,7 @@ package com.company.kctofel;
 /**
  * Computer class for Inheritance
  * Kevin C. Tofel
- * February 28, 2019
+ * March 5, 2019
  */
 
 public class Computer {

@@ -3,7 +3,7 @@ package com.company.kctofel;
 /**
  * Chromebook class for Inheritance from Computer class
  * Kevin C. Tofel
- * February 28, 2019
+ * March 5, 2019
  */
 
 public class Chromebook extends Computer {
@@ -14,7 +14,6 @@ public class Chromebook extends Computer {
     private double DisplaySize;
     private boolean IsTouchScreen;
     private double BatteryCapacity;
-    private boolean HasKeyboard;
     private boolean HasMemoryCardSlot;
 
     /**
@@ -28,15 +27,13 @@ public class Chromebook extends Computer {
      * @param displaySize           Screen size
      * @param isTouchScreen         Has touch screen or not
      * @param batteryCapacity       Battery capacity in watt hours
-     * @param hasKeyboard           Has a keyboard or not (tablet)
      * @param hasMemoryCardSlot     Has a memory card slot for expansion
      */
-    public Chromebook(String modelName, String CPU, int memoryAmount, double storageAmount, String operatingSystem, int powerSupplyWatts, double wiFiSpeed, int displaySize, boolean isTouchScreen, double batteryCapacity, boolean hasKeyboard, boolean hasMemoryCardSlot) {
+    public Chromebook(String modelName, String CPU, int memoryAmount, double storageAmount, String operatingSystem, int powerSupplyWatts, double wiFiSpeed, int displaySize, boolean isTouchScreen, double batteryCapacity, boolean hasMemoryCardSlot) {
         super(modelName, CPU, memoryAmount, storageAmount, operatingSystem, powerSupplyWatts, wiFiSpeed);
         DisplaySize = displaySize;
         IsTouchScreen = isTouchScreen;
         BatteryCapacity = batteryCapacity;
-        HasKeyboard = hasKeyboard;
         HasMemoryCardSlot = hasMemoryCardSlot;
     }
 
@@ -65,14 +62,6 @@ public class Chromebook extends Computer {
      */
     public double getBatteryCapacity() {
         return BatteryCapacity;
-    }
-
-    /**
-     * Gets flag for if keyboard or not
-     * @return keyboard or not (tablet)
-     */
-    public boolean getHasKeyboard() {
-        return HasKeyboard;
     }
 
     /**
@@ -108,14 +97,6 @@ public class Chromebook extends Computer {
     }
 
     /**
-     * Sets flag for if keyboard or not (tablet)
-     * @param HasKeyboard
-     */
-    public void setHasKeyboard(boolean HasKeyboard) {
-        this.HasKeyboard = HasKeyboard;
-    }
-
-    /**
      * Sets flag if memory can be expanded or not
      * @param HasMemoryCardSlot
      */
@@ -140,7 +121,6 @@ public class Chromebook extends Computer {
                 ", DisplaySize=" + DisplaySize +
                 ", IsTouchScreen=" + IsTouchScreen +
                 ", BatteryCapacity=" + BatteryCapacity +
-                ", HasKeyboard=" + HasKeyboard +
                 ", HasMemoryCardSlot=" + HasMemoryCardSlot +
                 '}';
     }

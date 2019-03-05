@@ -3,7 +3,7 @@ package com.company.kctofel;
 /**
  * Smartphone class for Inheritance from Computer class
  * Kevin C. Tofel
- * February 28, 2019
+ * March 5, 2019
  */
 
 public class Smartphone extends Computer {
